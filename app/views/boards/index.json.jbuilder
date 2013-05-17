@@ -1,4 +1,3 @@
 json.array!(@boards) do |board|
-  json.extract! board, :name, :comment_count
-  json.url board_url(board, format: :json)
+  json.extract! board, :id, :name, :comment_count
 end
