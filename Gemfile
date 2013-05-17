@@ -46,3 +46,5 @@ end
 
 # Use debugger
 gem 'debugger', group: [:development, :test]
+
+gem "multi_json", "~> 1.7.3"

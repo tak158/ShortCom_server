@@ -148,6 +148,7 @@ DEPENDENCIES
   debugger
   jbuilder (~> 1.0.1)
   jquery-rails
+  multi_json (~> 1.7.3)
   rails (= 4.0.0.rc1)
   sass-rails (~> 4.0.0.rc1)
   sdoc
