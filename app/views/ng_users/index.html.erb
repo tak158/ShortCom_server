@@ -1,0 +1,29 @@
+<h1>Listing ng_users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Distinationuser</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ng_users.each do |ng_user| %>
+      <tr>
+        <td><%= ng_user.user %></td>
+        <td><%= ng_user.distinationUser %></td>
+        <td><%= link_to 'Show', ng_user %></td>
+        <td><%= link_to 'Edit', edit_ng_user_path(ng_user) %></td>
+        <td><%= link_to 'Destroy', ng_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ng user', new_ng_user_path %>

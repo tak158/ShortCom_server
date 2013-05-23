@@ -1,0 +1,2 @@
+module NgUsersHelper
+end

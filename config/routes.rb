@@ -1,4 +1,6 @@
 ShortCom::Application.routes.draw do
+  resources :ng_users
+
   resources :comments
 
   resources :boards

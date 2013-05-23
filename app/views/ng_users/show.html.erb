@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @ng_user.user %>
+</p>
+
+<p>
+  <strong>Distinationuser:</strong>
+  <%= @ng_user.distinationUser %>
+</p>
+
+<%= link_to 'Edit', edit_ng_user_path(@ng_user) %> |
+<%= link_to 'Back', ng_users_path %>
