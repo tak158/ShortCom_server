@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th>User</th>
-      <th>Distinationuser</th>
+      <th>Target user</th>
       <th></th>
       <th></th>
       <th></th>
@@ -15,7 +15,7 @@
     <% @ng_users.each do |ng_user| %>
       <tr>
         <td><%= ng_user.user %></td>
-        <td><%= ng_user.distinationUser %></td>
+        <td><%= ng_user.target_user %></td>
         <td><%= link_to 'Show', ng_user %></td>
         <td><%= link_to 'Edit', edit_ng_user_path(ng_user) %></td>
         <td><%= link_to 'Destroy', ng_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>

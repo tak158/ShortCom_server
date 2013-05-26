@@ -69,6 +69,6 @@ class NgUsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ng_user_params
-      params.require(:ng_user).permit(:user_id, :distinationUser)
+      params.require(:ng_user).permit(:user_id, :target_user)
     end
 end
