@@ -14,7 +14,7 @@
   <tbody>
     <% @ng_users.each do |ng_user| %>
       <tr>
-        <td><%= ng_user.user_id %></td>
+        <td><%= ng_user.user %></td>
         <td><%= ng_user.target_user %></td>
         <td><%= link_to 'Show', ng_user %></td>
         <td><%= link_to 'Edit', edit_ng_user_path(ng_user) %></td>

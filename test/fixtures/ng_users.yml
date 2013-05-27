@@ -2,8 +2,8 @@
 
 one:
   user_id: 
-  distinationUser: 1
+  target_user: 1
 
 two:
   user_id: 
-  distinationUser: 1
+  target_user: 1

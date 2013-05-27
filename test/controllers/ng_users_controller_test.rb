@@ -18,7 +18,7 @@ class NgUsersControllerTest < ActionController::TestCase
 
   test "should create ng_user" do
     assert_difference('NgUser.count') do
-      post :create, ng_user: { distinationUser: @ng_user.distinationUser, user_id: @ng_user.user_id }
+      post :create, ng_user: { target_user: @ng_user.target_user, user_id: @ng_user.user_id }
     end
 
     assert_redirected_to ng_user_path(assigns(:ng_user))
@@ -35,7 +35,7 @@ class NgUsersControllerTest < ActionController::TestCase
   end
 
   test "should update ng_user" do
-    patch :update, id: @ng_user, ng_user: { distinationUser: @ng_user.distinationUser, user_id: @ng_user.user_id }
+    patch :update, id: @ng_user, ng_user: { target_user: @ng_user.target_user, user_id: @ng_user.user_id }
     assert_redirected_to ng_user_path(assigns(:ng_user))
   end
 
